@@ -21,7 +21,7 @@ def process_numbers():
         average = total_sum / total_count if total_count > 0 else 0
 
         # Step 4: Write logs to results.log
-        with open(results_file, "a") as logfile:
+        with open(results_file, "w") as logfile:
             logfile.write("File opened successfully\n")
             logfile.write(f"Read {total_count} numbers\n")
             logfile.write(f"Sum: {total_sum}\n")
